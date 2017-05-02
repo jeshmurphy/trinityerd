@@ -262,4 +262,26 @@ font-size: 30px;
     color:#fff;
     padding:20px 50px 20px 50px;
     text-align:right;
+    height:180px;
+}
+#footer-sidebar-one, #footer-sidebar-two, #footer-sidebar-three {
+    background-color:#000;
+    color:#fff;
+    padding:20px 50px 20px 50px;
+    text-align:right;
+    float:left;
+    width: 25%;
+    clear: none;
+}
+#footer-copyright {
+    background-color:#000;
+    color:#fff;
+    text-align:right;
+    height:90px;
+    float:right;
+    position: absolute;
+    bottom: 0;
+}
+.clear {
+    clear: both;
 }
