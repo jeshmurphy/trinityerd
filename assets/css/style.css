@@ -2,7 +2,7 @@
     GENERAL STYLES
 ==================================================*/
 body {
-          font-family:'Open Sans', sans-serif;
+    font-family:'Open Sans', sans-serif;
     font-size:14px;
 }
 
@@ -272,6 +272,9 @@ font-size: 30px;
     float:left;
     width: 25%;
     clear: none;
+}
+span.footer-bold {
+    font-wieght:bold;
 }
 .footer-copyright {
     background-color:#000;
