@@ -292,11 +292,12 @@ span.footer-bold {
 
 /* Type */
 p { margin:0px 0px 12px 0px; color:inherit; font-family:inherit; }
-h1 { font-size:28px; line-height:36px; color:#111; margin:0px 0px 10px 0px; font-weight:normal; font-family:inherit; }
+/*h1 { font-size:28px; line-height:36px; color:#111; margin:0px 0px 10px 0px; font-weight:normal; font-family:inherit; }
 h2 { font-size:28px; line-height:36px; color:#111; margin:0px 0px 5px 0px; font-weight:normal; font-family:inherit; }
 h3 { font-size:22px; line-height:30px; color:#666; margin:0px 0px 5px 0px; font-weight:bold; font-family:inherit; }
 h4 { font-size:18px; line-height:28px; color:#666; margin:5px 0px 5px 0px; font-weight:bold; font-family:inherit; }
 h5 { font-size:14px; line-height:24px; color:#666; margin:0px 0px 2px 0px; font-weight:bold; font-family:inherit; }
+*/
 a:link, a:visited { color:#108445; text-decoration:none; font-family:inherit; font-weight:inherit; }
 a:hover, a:active { color:#108445; text-decoration:underline; font-family:inherit; font-weight:inherit; }
 ul { padding:0px 0px 10px 35px; margin:0px; color:inherit; }
@@ -381,7 +382,6 @@ sup { color:inherit; font-family:inherit; }
 .footer_social img { margin:0px 10px 0px 0px; float:right; }
 
 /* Containers */
-.container { margin:0px 20px 20px 20px; }
 .container_banner { margin:0px auto; padding:0px; min-width:990px; max-width:1190px; width:auto; height:110px; }
 .container_banner_title { margin:0px 20px; padding:0px; color:#FFF; font-size:55px; line-height:110px; text-align:left; }
 .container_text { margin:10px 20px 30px 20px; padding:0px; font-size:15px; line-height:24px; text-align:left; overflow:auto; }
