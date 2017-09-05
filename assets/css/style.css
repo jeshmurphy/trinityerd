@@ -264,7 +264,7 @@ font-size: 30px;
     text-align:right;
     height:180px;
 }
-#footer-sidebar-one, #footer-sidebar-two, #footer-sidebar-three {
+#footer-sidebar-one, #footer-sidebar-two, #footer-sidebar-three, #footer-sidebar-four {
     background-color:#000;
     color:#fff;
     padding:20px 50px 20px 50px;
@@ -416,8 +416,8 @@ sup { color:inherit; font-family:inherit; }
 .service_title { margin:10px 20px 20px 20px; padding:0px; color:#108445; font-size:36px; line-height:40px; text-align:left; }
 .service_text { margin:5px 20px 10px 20px; padding:0px; font-size:15px; line-height:24px; text-align:left; overflow:auto; }
 .service_link { margin:10px 20px 30px 20px; padding:0px; font-size:18px; line-height:28px; text-align:left; }
-.service_sidebar_title_closed { display:block; margin:10px 20px 0px 20px; padding:0px 15px; height:35px; color:#FFF; font-size:19px; line-height:35px; text-align:left; background:#108445 url(template/icons/icon-arrow-menu-closed.png) no-repeat right; cursor:pointer; }
-.service_sidebar_title_open { display:block; margin:10px 20px 0px 20px; padding:0px 15px; height:35px; color:#FFF; font-size:19px; line-height:35px; text-align:left; background:#108445 url(template/icons/icon-arrow-menu-open.png) no-repeat right; cursor:pointer; }
+.service_sidebar_title_closed { display:block; margin:10px 20px 0px 20px; padding:0px 15px; height:35px; color:#FFF; font-size:19px; line-height:35px; text-align:left; background:#108445 no-repeat right; cursor:pointer; }
+.service_sidebar_title_open { display:block; margin:10px 20px 0px 20px; padding:0px 15px; height:35px; color:#FFF; font-size:19px; line-height:35px; text-align:left; background:#108445 no-repeat right; cursor:pointer; }
 .service_sidebar_menu { margin:0px 20px 30px 20px; padding:0px; font-size:14px; line-height:16px; text-align:right; }
 .service_sidebar_menu ul { padding:0px 5px 0px 0px; margin:0px; color:inherit; list-style:none; }
 .service_sidebar_menu ul li { padding:5px 5px 5px 0px; margin:0px; color:inherit; }
