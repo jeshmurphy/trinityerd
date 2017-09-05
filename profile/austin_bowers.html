@@ -15,8 +15,6 @@
   <title>TrinityERD</title><!--REQUIRED STYLE SHEETS-->
   <!-- BOOTSTRAP CORE STYLE CSS -->
   <link href="/../assets/css/bootstrap.css" rel="stylesheet"><!-- FONTAWESOME STYLE CSS -->
-  <link href="/../assets/css/font-awesome.min.css" rel="stylesheet"><!-- VEGAS STYLE CSS -->
-  <link href="/../assets/scripts/vegas/jquery.vegas.min.css" rel="stylesheet"><!-- CUSTOM STYLE CSS -->
   <link href="/../assets/css/style.css" rel="stylesheet"><!-- GOOGLE FONT -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'><!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -25,7 +23,20 @@
     <![endif]  <link href="./stylesheet.css" rel="stylesheet" type="text/css">
  
     -->
+     <script src="/../assets/plugins/jquery-1.10.2.js">
+  </script> <!-- BOOTSTRAP CORE SCRIPT   -->
+<script type="text/javascript">
+function supportsImports() {
+  return 'import' in document.createElement('link');
+}
 
+if (supportsImports()) {
+  //alert('supports imports');
+} else {
+  //alert('does not support imports');
+}
+</script>
+<link rel="import" href="/profile/people.html">
 </head>
 <body>
 <!-- Navigation -->
@@ -69,6 +80,7 @@
                   <h1 style="color:#108445;">Austin Bowers</h1>
                   <div class="bio_position">
                     <p style="font-weight: bold; padding-bottom:8px !important; line-height:16px !important;">IT Manager</p>
+                    <p style="padding-bottom:8px !important;  line-height:16px !important;"></p>
                   </div>
                 </div>
                 <div class="bio_content">
@@ -80,7 +92,7 @@
                   <a href="../index.html">« Back</a>
                 </div>
               </div>
-              <div class="content_right content_three">
+              <div class="content_right content_three" id="people_menu">
                 <!-- People Menu -->
                 <script>
                 function switch_menu(title_id, menu_id) {
@@ -99,90 +111,27 @@
                 }
 
                 </script>
-                <div class="service_sidebar_title_closed" id="title0" onclick="switch_menu(&#39;title0&#39;,&#39;menu0&#39;)">
-                  Seattle
-                </div>
-                <div class="service_sidebar_menu" id="menu0" style="display:none;">
-                  <ul>
-                    <li><a href="/profile/aimee_st_cyr.html">Aimee St. Cyr</a>
-                    </li>
-                    <li><a href="/profile/aimee_st_cyr.html">Alexander Murphy</a>
-                    </li>
-                    <li><span class="service_menu_linko">Austin Bowers</span></li>
-                    <li><a href="/profile/chris_prochazka.html">Chris Prochazka</span>
-                    </li>
-                    <li><a href="/profile/colin_murphy.html">Colin Murphy</a>
-                    </li> 
-                    <li><a href="/profile/darbi_krumpos.html">Darbi Krumpos</a>
-                    </li>
-                    <li>
-                      <a href="/profile/deonte_randolph.html">Deonte Randolph</a>
-                    </li>
-                    <li>
-                      <a href="/profile/ellen_tackett.html">Ellen Tackett</a>
-                    </li>
-                    <li>
-                      <a href="/profile/gene_apostol.html">Gene Apostol</a>
-                    </li>
-                    <li>
-                      <a href="/profile/jennifer_stephan.html">Jennifer Stephan</a>
-                    </li>
-                    <li>
-                      <a href="/profile/norah_willett.html">Norah Willett</a>
-                    </li>
-                    <li>
-                      <a href="/profile/patricia_shelby.html">Patricia Shelby</a>
-                    </li>
-                    <li>
-                      <a href="/profile/steve_hess.html">Steve Hess</a>
-                    </li>
-                    <li>
-                      <a href="/profile/tiffany_gould.html">Tiffany Gould</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="service_sidebar_title_closed" id="title1" onclick="switch_menu(&#39;title1&#39;,&#39;menu1&#39;)">
-                  Honolulu
-                </div>
-                <div class="service_sidebar_menu" id="menu1" style="display:none;">
-                  <ul>
-                    <li>
-                      <a href="/profile/kevin_agliam.html">Kevin Agliam</a>
-                    </li>
-                    <li>
-                      <a href="/profile/jacqueline_fortezzo.html">Jacqueline Fortezzo</a>
-                    </li>
-                    <li>
-                      <a href="/profile/moana_cummings.html">Moana Cummings</a>
-                    </li>
-                    <li>
-                      <a href="/profile/rollin_wakely.html">Rollin Wakely</a>
-                    </li>
-                    <li>
-                      <a href="/profile/shawn_moseley.html">Shawn Moseley</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="service_sidebar_title_closed" id="title2" onclick="switch_menu(&#39;title2&#39;,&#39;menu2&#39;)">
-                  Connecticut
-                </div>
-                <div class="service_sidebar_menu" id="menu2" style="display:none;">
-                  <ul>
-                    <li>
-                      <a href="/profile/robert_nieminen.html">Robert Nieminen</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="service_sidebar_title_closed" id="title3" onclick="switch_menu(&#39;title3&#39;,&#39;menu3&#39;)">
-                  South Carolina
-                </div>
-                <div class="service_sidebar_menu" id="menu3" style="display:none;">
-                  <ul>
-                    <li>
-                      <a href="/profile/alex_holtkamp.html">Alex Holtkamp</a>
-                    </li>
-                  </ul>
-                </div>
+
+                <div id="container"></div>
+                <script type="text/javascript">
+                  var link = document.querySelector('link[rel="import"]'); // get our HTML5 import
+                  var template = link.import.querySelector('template'); // store the <template> value in template
+                  var clone = document.importNode(template.content, true); // create a copy of it to append to the current page
+
+                  var whoami = $('.bio_text img').attr("alt"); // get current profile name
+
+                  var founditems = clone.querySelectorAll('div.service_sidebar_menu a'); // find all <a> tags in people.html
+                  for (var i = 0; i < founditems.length; i++) { // iterate over them
+                    if (whoami == founditems[i].innerHTML) { // find only the <a> tag that == the current profile name 
+                      var linko = document.createElement('span'); // create the linko span 
+                      linko.className += "service_menu_linko";
+                      linko.innerHTML = founditems[i].innerHTML; // fill it with the current person's name
+                      founditems[i].parentNode.replaceChild(linko,founditems[i]); // replace the <a> with the <span>
+                      
+                    }
+                  }
+                  document.querySelector('#container').appendChild(clone); // insert sidebar on page
+                </script>
               </div><!-- People Menu -->
             </div>
           </div>
@@ -227,16 +176,6 @@
   <!--End Footer Section -->
   <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
   <!-- CORE JQUERY  -->
-  <script src="/../assets/plugins/jquery-1.10.2.js">
-  </script> <!-- BOOTSTRAP CORE SCRIPT   -->
-   
-  <script src="/../assets/plugins/bootstrap.js">
-  </script> <!-- VEGAS SLIDESHOW SCRIPTS -->
-   
-  <script src="/../assets/plugins/vegas/jquery.vegas.min.js">
-  </script> <!-- CUSTOM SCRIPTS -->
-   
-  <script src="/../assets/js/custom.js">
-  </script>
+ 
 </body>
 </html>
