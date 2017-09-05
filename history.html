@@ -48,99 +48,45 @@ if (supportsImports()) {
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a href="../index.html">HOME</a>
+            <a href="/home">HOME</a>
           </li>
           <li>
-            <a href="../index.html#about">ABOUT</a>
+            <a href="/#about">ABOUT</a>
           </li>
           <li>
-            <a href="../index.html#team">TEAM</a>
+            <a href="/#team">TEAM</a>
+          </li>
+           <li>
+            <a href="history.html">HISTORY</a>
           </li>
           <li>
-            <a href="../index.html#services">SERVICES</a>
+            <a href="/#services">SERVICES</a>
           </li>
           <li>
-            <a href="../index.html#contact">CONTACT</a>
+            <a href="/#contact">CONTACT</a>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
   </nav><!--End Navigation -->
-  <!--Profile Section-->
+  <!--History Section-->
   <section class="for-full-back color-white" id="about">
     <div class="container">
       <div class="row text-center">
-        <div  class="col-md-1">
-          <div class="content_container">
-            <div class="content">
-              <div class="content_left content_nine">
-                <!-- Profile Post -->
-                <div class="bio_text">
-                  <img alt="Colin Murphy" class="image_left" height="275" src="../assets/img/colin_murphy.jpg" width="275">
-                  <h1 style="color:#108445;">Colin Murphy, RRC. FRCI, LEED AP BD+C, PRA</h1>
-                  <div class="bio_position">
-                    <p style="font-weight: bold; padding-bottom:8px !important; line-height:16px !important;">Principal</p>
-                    <p style="padding-bottom:8px !important;  line-height:16px !important;">LEED Accredited Professional</p>
-                  </div>
-                </div>
-                <div class="bio_content">
-                  <p><strong>
-                  Colin is the founder and principal of Trinity | ERD. A Registered Roof Consultant with degrees in Mechanical Engineering and Law (Scotland), he has authored and presented numerous papers on roofing and building envelope subjects throughout the United States and Canada. His work includes forensic analysis of building envelopes, design of building envelope systems, and envelope component and system testing. Colin’s certifications include LEED Accredited Professional status from the U.S. Green Building Council, certifications as both a Residential and Commercial Building Inspector from the International Code Council and certification as a Professional Reserve Analyst through the Association of Professional Reserve Analysts. Colin is the co-author of The Roof Construction Guide for General Contractors. He also holds fourteen American and European patents for roofing and building envelope components and systems. Colin leads a strong team of designers, investigators, project managers, laboratory technicians, field observers, architects and engineers, all of whom focus on the exterior envelope of both commercial and residential buildings.
-                  </strong></p>
-                </div><!-- Profile Post -->
-                <div class="bio_link">
-                  <a href="../index.html">« Back</a>
-                </div>
-              </div>
-              <div class="content_right content_three" id="people_menu">
-                <!-- People Menu -->
-                <script>
-                function switch_menu(title_id, menu_id) {
-                var title = document.getElementById(title_id);
-                if(title.className == 'service_sidebar_title_closed') {
-                    title.className = 'service_sidebar_title_open';
-                    } else {
-                    title.className = 'service_sidebar_title_closed';
-                }
-                var menu = document.getElementById(menu_id);
-                if(menu.style.display == 'block') {
-                    menu.style.display = 'none';
-                    } else {
-                    menu.style.display = 'block';
-                }
-                }
-
-                </script>
-
-                <div id="container"></div>
-                <script type="text/javascript">
-                  var link = document.querySelector('link[rel="import"]'); // get our HTML5 import
-                  var template = link.import.querySelector('template'); // store the <template> value in template
-                  var clone = document.importNode(template.content, true); // create a copy of it to append to the current page
-
-                  var whoami = $('.bio_text img').attr("alt"); // get current profile name
-
-                  var founditems = clone.querySelectorAll('div.service_sidebar_menu a'); // find all <a> tags in people.html
-                  for (var i = 0; i < founditems.length; i++) { // iterate over them
-                    if (whoami == founditems[i].innerHTML) { // find only the <a> tag that == the current profile name 
-                      var linko = document.createElement('span'); // create the linko span 
-                      linko.className += "service_menu_linko";
-                      linko.innerHTML = founditems[i].innerHTML; // fill it with the current person's name
-                      founditems[i].parentNode.replaceChild(linko,founditems[i]); // replace the <a> with the <span>
-                      
-                    }
-                  }
-                  document.querySelector('#container').appendChild(clone); // insert sidebar on page
-                </script>
-              </div><!-- People Menu -->
-            </div>
-          </div>
-        </div><!-- Social -->
+        <div class="col-md-8 col-md-offset-2">
+          <h1>History</h1>
+          <h4><strong><p>Founded in 1986 as Trinity Engineering, Inc., Colin Murphy wanted to form a company that would allow him to apply his wealth of experience providing solutions for analyzing, improving and developing the building envelope.</p> 
+          <p>The name "Trinity" came from a group of companies then owned by Mr. Murphy that were all named after the Trinity River in northern California, where he fished while working in the state in the late 1970's. He describes it as an “almost religious” experience: "It was one of the most beautiful places I had ever fished,” says Mr. Murphy. “I had an old fiberglass fly rod that I still have today as a memory of the times."</p>
+          <p>Through the years, the company expanded throughout the country, but the name, "Trinity Engineering" could not be used in all states. Looking for a name that described who we are, and the breadth of services we could provide, the name Exterior Research & Design (ERD) was born.</p>
+          <p>Since we have been in business for twenty years, many people still identify us as “Trinity,” especially the firms we worked with internationally. As we marked the twentieth anniversary of the firm in 2006, we combined our heritage with our present, to become Trinity | ERD.</p>
+          <p>Trinity | ERD not represents half a lifetime's work and a proud history. Today, the company includes over 40 staff members, a full-service testing facility, and clients from across North America, the Middle East, and Europe. We provide numerous services related to the building envelope and oversee a diverse set of building envelope projects throughout the world.</p>
+          </strong></h4>
+        </div>
       </div>
     </div>
   </section>
-  <!--End Profile Section-->
-  <!--Footer Section -->
+<!--End History Section-->
+<!--Footer Section -->
   <div class="for-full-back" id="footer">
     <div id="footer-sidebar-one">
       <span style="font-weight:bold;">Seattle Headquarters</span><br>
