@@ -260,21 +260,21 @@ font-size: 30px;
 #footer {
     background-color:#000;
     color:#fff;
-    padding:20px 50px 20px 50px;
+    padding:20px 100px 20px 100px;
     text-align:right;
     height:180px;
 }
-#footer-sidebar-one, #footer-sidebar-two, #footer-sidebar-three, #footer-sidebar-four {
+#footer-sidebar-one, #footer-sidebar-two {
     background-color:#000;
     color:#fff;
-    padding:20px 50px 20px 50px;
-    text-align:right;
+    padding:20px 100px 20px 100px;
+    text-align:center;
     float:left;
-    width: 25%;
+    width: 400px;
     clear: none;
 }
 span.footer-bold {
-    font-wieght:bold;
+    font-weight:bold;
 }
 .footer-copyright {
     background-color:#000;
@@ -371,7 +371,7 @@ sup { color:inherit; font-family:inherit; }
 .footer { margin:0px auto 50px auto; padding:0px; min-width:990px; max-width:1190px; width:100%; }
 .footer_mobile { display:none; }
 .footer td { vertical-align:top; padding:25px 0px; }
-.footer_text { display:block; margin:5px 10px; padding:0px; width:100%; max-width:500px; font-size:13px; line-height:19px; color:#333; text-align:left; float:left; }
+.footer_text { display:block; margin:5px 10px; padding:0px; width:100%; max-width:500px; font-size:16px; line-height:19px; color:#333; text-align:left; float:left; }
 .footer_text a:link, .footer_text a:visited { color:#666; text-decoration:none; font-weight:normal; }
 .footer_text a:hover, .footer_text a:active { color:#CCC; text-decoration:underline; font-weight:normal; }
 .footer_brands { display:inline-block; width:300px; min-height:70px; margin:0px 0px 0px 20px; padding:5px 0px 10px 20px; font-size:14px; color:#333; line-height:20px; text-align:center; float:right; border-left:1px solid #999; }
