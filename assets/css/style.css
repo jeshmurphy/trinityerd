@@ -260,17 +260,15 @@ font-size: 30px;
 #footer {
     background-color:#000;
     color:#fff;
-    padding:20px 100px 20px 100px;
+    padding:20px 20px 20px 50px;
     text-align:right;
-    height:180px;
 }
 #footer-sidebar-one, #footer-sidebar-two {
     background-color:#000;
     color:#fff;
-    padding:20px 100px 20px 100px;
-    text-align:center;
+    text-align:left;
     float:left;
-    width: 400px;
+    width: 280px;
     clear: none;
 }
 span.footer-bold {
@@ -281,7 +279,6 @@ span.footer-bold {
     color:#fff;
     text-align:right;
     float:right;
-    margin-right: -20px;
 }
 .clear {
     clear: both;
