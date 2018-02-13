@@ -255,7 +255,9 @@ font-size: 30px;
 /*=======================================
     FOOTER STYLES
 ==================================================*/
-
+.toast-top-right {
+    padding-top:70px;
+}
 
 #footer {
     background-color:#000;
