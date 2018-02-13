@@ -359,16 +359,34 @@
         <div class="col-md-7">
           <h2>Complete the form to request a consultation with one of our experts.<br>
           <br></h2>
-          <form>
+          <form action="https://formspree.io/info@trinityerd.com" method="POST">
             <div class="row">
               <div class="col-md-6 col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" placeholder="Name" required="required" type="text">
+                  <input class="form-control" id="full_name" name="full_name" placeholder="Full Name" required="required" type="text">
                 </div>
               </div>
               <div class="col-md-6 col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" placeholder="Email address" required="required" type="text">
+                  <input class="form-control" id="email" name="email" placeholder="Email address" required="required" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                    <select class="form-control" id="service" name="service" placeholder="Service" required="required" type="select">
+                      <option selected disabled>Please select a service...</option>
+                      <option>Analysis</option>
+                      <option>Design</option>
+                      <option>Litigation Support</option>
+                      <option>Contract Administration</option>
+                    </select>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" id="location" name="location" placeholder="Location" required="required" type="text">
                 </div>
               </div>
             </div>
